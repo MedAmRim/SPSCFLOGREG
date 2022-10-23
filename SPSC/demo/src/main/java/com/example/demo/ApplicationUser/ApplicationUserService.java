@@ -62,7 +62,7 @@ public class ApplicationUserService implements UserDetailsService {
        ConfirmationToken confirmationToken = new ConfirmationToken(
                token,
                LocalDateTime.now(),
-               LocalDateTime.now().plusMinutes(15),
+               LocalDateTime.now().plusMinutes(20),
                user
                      );
 

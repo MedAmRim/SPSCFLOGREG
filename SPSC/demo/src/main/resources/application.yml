@@ -6,9 +6,9 @@ server:
 
 spring:
   datasource:
-    password:
+    password: 1234     
     url: jdbc:postgresql://localhost:5432/registration
-    username:
+    username: postgres
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -18,7 +18,7 @@ spring:
         format_sql: true
     show-sql: true
 
-    mail:
+  mail:
       host: localhost
       port: 1025
       username: hello

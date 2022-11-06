@@ -14,14 +14,13 @@ import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-public class EmailService implements IEmailSender{
+public class EmailService implements IEmailSender {
 
     private final static Logger LOGGER = LoggerFactory
     .getLogger(EmailService.class);
 
     private final JavaMailSender mailSender;
 
-    @Override
     @Async
     public void send(String to, String email) {
 
